@@ -9,15 +9,19 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Veu Email List</title>
 </head>
 <body>
   
-  <div id="app">
+  <div class = 'back' id="app">
     <div v-if="isLoading">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="">
+      <img src="https://64.media.tumblr.com/845ed8e1ffd6043904d31cc7daa5218f/b2e676efd227981c-f7/s640x960/bc6ebdd2bf5e6c1359ea3ad2a751d24e4b54d4e2.gifv" alt="">
+
+      <h1>Loading.....</h1>
     </div>
-    <div v-else>
+    <div class='box' v-else>
       <ul >
         <li v-for="email in emails">
           {{email}}
