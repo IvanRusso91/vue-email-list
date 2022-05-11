@@ -14,13 +14,16 @@
 <body>
   
   <div id="app">
-
-      <ul>
+    <div v-if="isLoading">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="">
+    </div>
+    <div v-else>
+      <ul >
         <li v-for="email in emails">
           {{email}}
         </li>
       </ul>
-
+    </div>
   </div>
 
   <script src="js/script.js"></script>
